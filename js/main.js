@@ -83,8 +83,8 @@ function btn() {
 // Acceleration detection 
 
 window.addEventListener('devicemotion', function(ev) {
-  if (ev.acceleration.x > 8 /*ev.acceleration.y > 8*/) {
-  //  btn()
+  if (ev.acceleration.x > 6 || ev.acceleration.y > 6) {
+    btn()
     txt.innerHTML = 'acceleration works!';
   }
 })
