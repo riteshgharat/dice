@@ -84,7 +84,8 @@ function btn() {
 
 window.addEventListener('devicemotion', function(ev) {
   if (ev.acceleration.x > 8 || ev.acceleration.y > 8) {
-    btn()
+  //  btn()
+    txt.innerHTML = 'acceleration works!'
   }
 })
 /*Sharing Function*/
