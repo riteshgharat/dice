@@ -83,7 +83,7 @@ function btn() {
 // Acceleration detection 
 
 window.addEventListener('devicemotion', function(ev) {
-  if (ev.acceleration.x > 10 || ev.acceleration.y > 10) {
+  if (ev.acceleration.x > 20 || ev.acceleration.y > 20) {
     btn();
     //txt.innerHTML = 'acceleration works!';
   }
