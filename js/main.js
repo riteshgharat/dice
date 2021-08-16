@@ -88,7 +88,7 @@ window.addEventListener('devicemotion', function(ev) {
     //txt.innerHTML = 'acceleration works!';
   }
 else{
-console.log('acceleration not work)
+console.log('acceleration not work')
 }
 })
 /*Sharing Function*/
