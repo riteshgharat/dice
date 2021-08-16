@@ -92,7 +92,7 @@ window.addEventListener('devicemotion', function(ev) {
 function share() {
   if (navigator.share) {
     navigator.share({
-        title: 'Simple Dices',
+        title: 'Simple Dices Vs1.5,
         text: 'Check it now!',
         url: 'https://crazydice.netlify.app',
       }).then(() => {
