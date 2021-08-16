@@ -15,9 +15,7 @@ let colorIndex = 0;
 
 /*Dice Main Function */
 function btn() {
-
   //function to get random numbers
-
   var digits1 = Math.floor(Math.random() * 6) + 1;
   var digits2 = Math.floor(Math.random() * 6) + 1;
 
@@ -82,16 +80,13 @@ function btn() {
   document.querySelector('body').style.backgroundColor = colors[colorIndex];
   colorIndex = (colorIndex + 1) % colors.length;
 }
-
 // Acceleration detection 
+
 window.addEventListener('devicemotion', function(ev) {
-  //  console.info(ev.acceleration.y, ev.rotationRate.gamma);
-  if (ev.acceleration.x > 10 || ev.acceleration.y > 10) {
-    // console.log(ev.rotationRate.gamma)
+  if (ev.acceleration.x > 8 || ev.acceleration.y > 8) {
     btn()
   }
 })
-
 /*Sharing Function*/
 function share() {
   if (navigator.share) {
