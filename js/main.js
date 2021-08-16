@@ -83,20 +83,20 @@ function btn() {
 // Acceleration detection 
 
 window.addEventListener('devicemotion', function(ev) {
-  if (ev.acceleration.x > 8 || ev.acceleration.y > 8) {
+  if (ev.acceleration.x > 8 /*ev.acceleration.y > 8*/) {
   //  btn()
-    txt.innerHTML = 'acceleration works!'
+    txt.innerHTML = 'acceleration works!';
   }
 })
 /*Sharing Function*/
 function share() {
   if (navigator.share) {
     navigator.share({
-        title: 'Crazy Dices Vs1.5,
-        text: 'Crazy Dices Vs1.5, Check it now!',
+        title: 'Crazy Dices Vs1.5',
+        text: 'Crazy Dices Vs1.5. Check it now!',
         url: 'https://crazydice.netlify.app',
       }).then(() => {
-        console.log('Thanks for sharing!');
+        //console.log('Thanks for sharing!');
         txt.innerHTML = 'Thanks for sharing!';
         txt.style.visibility = "visible";
       })
@@ -118,7 +118,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-/*
+
   let installPromptEvent;
 
   window.addEventListener('beforeinstallprompt', (event) => {
@@ -146,4 +146,4 @@ if ('serviceWorker' in navigator) {
       installPromptEvent = null;
     });
   })
-  */
+  
