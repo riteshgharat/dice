@@ -1,0 +1,31 @@
+{
+  "name": "Crazy Dices",
+  "short_name": "Crazy Dices",
+  "description": "Simple Dices to play simple games",
+  "icons": [{
+    "src": "images/logo128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "images/logo144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },{
+      "src": "images/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "images/logo256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "images/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "white",
+  "theme_color": "black"
+}
